@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-grey: rgba(231, 231, 231, 0.634);
+    --light-grey:rgb(169, 169, 169);
+    --grey:rgb(133, 133, 133);
+}
+
+html{
+    font-size: 30px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+  background-color: var(--bg-grey); 
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 1rem; 
+  padding: .15rem;
+  width: fit-content;
+  margin: auto;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: .1rem;
+}
+
+nav a{
+    padding:.3rem .8rem;
+    border-radius: 20px;
+}
+
+.active{
+    background-color:white;
+}
+
+a{
+    color: black;
+   text-decoration: none;
+   font-size: .5rem;
+   outline: none;
+}
+
+/*-----------------------------heading1-----------------------------------------*/
+
+h1,h2{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+   
+}
+
+h1{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#main-heading{
+    margin-top: 5.5rem;
+}
+
+p{
+    font-size: .5rem;
+}
+
+#services{
+    display: flex;
+    margin:1rem auto ;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+}
+
+#services p:not(:first-child){
+     padding: .4rem;
+     background-color: var(--bg-grey);
+     border-radius: 40px;
+}
+
+/*-------------------------------------image container----------------------------------*/
+
+.image-container{
+    margin:4.5rem auto ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    gap: .6rem;
+}
+
+.image-container img{
+   width: 40vw;
+   height: 40vw;
+    border-radius: .5rem;
+}
+
+figcaption{
+    font-size: .5rem;
+    display: none;
+}
+
+figcaption span{
+    color:var(--light-grey);
+}
+
+/*------------------------------------------contact-----------------------------------*/
+
+#contact div:first-child{
+    margin: 5.2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-link{
+    color: var(--grey);
+    font-size: 1.22rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.contact-link:hover{
+    color: var(--light-grey);
+}
+
+footer{
+    margin: auto 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a:hover{
+color:var(--light-grey);
+}
+
+footer p{
+    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+/*----------------------------------profile page-------------------------------------*/
+#profile-heading{
+    margin:8.5rem auto;
+}
+
+.sub-heading{
+    font-size: .5rem;
+    background-color:var(--bg-grey) ;
+    margin: auto;
+    padding:.3rem .8rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.about{
+    margin-top:6rem ;
+}
+
+.about+h2{
+margin-bottom: 7rem;
+}
+
+.experience-container{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    justify-items: center;
+    margin:5rem 9%;
+}
+
+.experience-container .experience{
+display: flex;
+flex-direction: column;
+gap: .3rem;
+}
+
+.experience-container .experience div{
+    margin-top: .5rem;
+    font-size: .45rem;
+    font-weight: 500;
+}
+
+.experience-container .experience p{
+    text-align: center;
+    color: var(--grey);
+    font-size: .45rem;
+    font-weight: 500;
+}
+
+.experience-container h3{
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*---------------------------------contact page-----------------------------*/
+.main-link{
+    font-size: 2.5rem;
+}
+
+/*--------------------------------tab design-----------------------*/
+@media screen and (max-width:1025px){
+    h1{
+        font-size: 36px;
+        width: 100%;
+    }
+    #main-heading{
+        margin:4rem auto;
+    }
+    h2, #contact h2 a{
+font-size: 32px;
+    }
+    #services{
+        display: none;
+    }
+    #image-container{
+        flex-basis: 100%;
+    }
+    #image-container img{
+        width: 90vw;
+        height: 90vw;
+    }
+    figcaption{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-links{
+       margin-bottom: 2rem;
+    }
+}
+
+/*----------------------mobile design----------------------------*/
+@media screen and (max-width:550px) {
+    
+    
+    
+}
