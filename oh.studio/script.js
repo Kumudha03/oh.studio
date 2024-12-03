@@ -11,7 +11,7 @@ window.addEventListener("load",()=>{
 
     const observer =new IntersectionObserver(handleIntersection,options);
 
-    const sections=document.querySelectorAll(div);
+    const sections=document.querySelectorAll("div");
     sections.forEach(section=>
         observer.observe(section));
 

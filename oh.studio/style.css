@@ -17,6 +17,17 @@ body{
     font-family: sans-serif;
 }
 
+div{
+    opacity: 0;
+    transform: translateY(-50px);
+    
+}
+
+div.visible{
+    opacity: 1;
+    transform: translateY(50px);
+}
+
 nav{
   background-color: var(--bg-grey); 
   backdrop-filter: blur(12px);
