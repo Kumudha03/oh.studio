@@ -16,17 +16,17 @@ html{
 body{
     font-family: sans-serif;
 }
-
-div{
+/* 
+.section{
     opacity: 0;
     transform: translateY(-50px);
-    
+    transition: all 0.8 ease-out;
 }
 
-div.visible{
+.section.visible{
     opacity: 1;
     transform: translateY(50px);
-}
+} */
 
 nav{
   background-color: var(--bg-grey); 
